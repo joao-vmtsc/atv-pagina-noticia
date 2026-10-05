@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias de Ciência - Portal da Ciência</title>
+  <style>
+    /* CSS BÁSICO */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .meta-info {
+      font-size: 0.9em;
+      color: #666;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .imagem-noticia {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+
+    .reportagem-texto {
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .destaque-video {
+      background-color: #eef4fc;
+      border-left: 5px solid #004080;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+
+    .container-video {
+      position: relative;
+      padding-bottom: 56.25%; /* Proporção 16:9 */
+      height: 0;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    .container-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .legenda-video {
+      font-size: 0.85em;
+      color: #555;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portal de Ciência</h1>
+  </header>
+
+  <main>
+    <!-- 1. REPORTAGEM PRINCIPAL -->
+    <article class="reportagem-principal">
+      <!-- Título da notícia -->
+      <h1>Telescópio Espacial Revela Novas Fotos de Galáxias Distantes</h1>
+      
+      <!-- Subtítulo -->
+      <h2>Imagens em alta definição ajudam astrônomos a entender os primeiros bilhões de anos do universo.</h2>
+      
+      <!-- Data de publicação e Autor -->
+      <div class="meta-info">
+        <p><strong>Publicado em:</strong> <time datetime="2026-10-05">05 de Outubro de 2026</time></p>
+        <p><strong>Autor:</strong> Equipe de Redação Científica</p>
+      </div>
+
+      <!-- Imagem relacionada -->
+      <img class="imagem-noticia" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="Vista do espaço sideral com galáxias e estrelas">
+
+      <!-- Texto completo da reportagem (Mais de 5 linhas) -->
+      <div class="reportagem-texto">
+        <p>
+          Astrônomos de todo o mundo estão comemorando a liberação de um novo conjunto de dados e fotografias capturadas por telescópios espaciais de última geração. As novas imagens mostram detalhes inéditos de galáxias formadas pouquíssimo tempo após o Big Bang, oferecendo uma janela para o passado distante do nosso cosmos.
+        </p>
+        <p>
+          Através dessas observações em infravermelho, os pesquisadores conseguiram analisar a composição química de estrelas primitivas e identificar a presença de poeira cósmica em regiões onde antes se acreditava não haver estrutura definida. Essa descoberta pode mudar radicalmente as teorias atuais sobre a taxa de expansão e evolução do universo.
+        </p>
+        <p>
+          Além disso, a equipe responsável pelo processamento de dados ressaltou que essas informações estarão disponíveis publicamente para cientistas e estudantes de todo o planeta, promovendo a cooperação científica global e incentivando novas pesquisas na área da astrofísica.
+        </p>
+      </div>
+    </article>
+
+    <!-- 2. DESTAQUE COM VÍDEO -->
+    <section class="destaque-video">
+      <!-- Título do destaque -->
+      <h3>Destaque em Vídeo: Como Funcionam os Telescópios Espaciais?</h3>
+
+      <!-- Breve descrição -->
+      <p>
+        Confira abaixo uma explicação visual simplificada sobre a tecnologia usada nos telescópios modernos para capturar a luz vinda do espaço profundo.
+      </p>
+
+      <!-- Vídeo incorporado (YouTube) -->
+      <div class="container-video">
+        <iframe 
+          src="https://www.youtube.com/embed/1aT3a_C6s_k" 
+          title="Vídeo demonstrativo sobre ciência espacial" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Legenda ou explicação sobre o conteúdo do vídeo -->
+      <p class="legenda-video">
+        <strong>Explicação do vídeo:</strong> A animação ilustra o caminho que a luz percorre através dos espelhos primários e secundários do telescópio até ser convertida em dados digitais pelos sensores de precisão.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal da Ciência - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
